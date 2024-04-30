@@ -1,0 +1,13 @@
+import { Suspense } from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.js";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <Suspense fallback={<h2>Loading...</h2>}>
+    <App />
+  </Suspense>
+);
